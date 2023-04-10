@@ -65,6 +65,13 @@ body{
     cursor: pointer;
 }
 
+.number-list.active{
+    background-color: rgb(158, 155, 155);
+    color: black;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
 .button{
     text-align: center;
     background-color: rgb(255, 102, 0);
@@ -126,3 +133,25 @@ body{
     text-align: center;
     margin-bottom: 15px;
 }
+
+/* Mobile first approach is advisable. So use the dev tools in your browser to display webpage in mobile view so you can style it in mobile view. */
+/* Write all mobile styling in the base of your CSS file before considering writing media queries for the following screensizes 
+
+Please remember to avoid fixed width and height as much as possible, use % or vw or vh as units for height and width as much as you can. This will improve responsivenes
+*/
+
+@media only screen and (min-width: 768px) {
+    /* Write styling for the 768px breakpoint and above. Remember that this is the beginning of your desktop styling and not all styling must be perfect here. There are more breakpoints that you can use to style higher screen sizes */
+}
+
+
+@media only screen and (min-width: 1366px) {
+    /* Write styling for 1366px if there's anything that requires fixing at this breakpoint */
+}
+
+
+@media only screen and (min-width: 1440px) {
+    /* write styling for this breakpoint only if there is any element that needs fixing */
+}
+
+/* After writing all your CSS.MAke sure you checck for responsiveness by manually dragging your browser screen width. Add a breakpoint that needs fixing and fix its styling */
